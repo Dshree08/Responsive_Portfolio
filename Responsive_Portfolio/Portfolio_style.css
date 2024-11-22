@@ -1,0 +1,172 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+hr {
+    width: 70%;
+}
+
+h1, h2 {
+    font-weight: 700;
+}
+
+p {
+    font-weight: 400;
+    color: #333;
+    text-decoration: none;
+}
+
+a {
+    font-weight: 100;
+    color: #9e084e;
+}
+a:hover {
+    color: #ee27d0;
+}    
+
+
+header {
+    width: 100%;
+    background: linear-gradient(to right, #dd6192, #808080);
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+header p {
+    color: #ccc;
+    max-width: 60%; 
+    margin: 0 auto; 
+    padding: 0 25px;
+    text-align: center; 
+}
+
+footer {
+    width: 100%;
+    background: linear-gradient(to right, #dd6192, #808080);
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+    width: 80%;
+    max-width: 800px;
+}
+
+img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    object-fit: cover;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px; 
+    margin: auto;
+}
+
+.skills-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+}
+.skills-list li {
+    list-style-type: none;
+    background: #e399c7;
+    color: #3f0a27; 
+    padding: 10px 15px;
+    border-radius: 15px;
+    animation: bounce 1s infinite alternate;
+}
+
+form {
+    margin: 20px auto;
+    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 15px 15px rgba(189, 63, 63, 0.1);
+    background: #fff;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    margin-bottom: 15px;
+    color: #333; 
+}
+
+form input[type="text"], form input[type="email"], form textarea, form button {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+form button {
+    background-image: linear-gradient(to right, #dd6192, #808080);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+form button:hover {
+    background-image: linear-gradient(to right, #808080, #dd6192);
+}
+
+
+/*i used this for adapting screensize for tablets */
+@media only screen and (max-width: 768px) {
+    .skills-list {
+        flex-direction: column; 
+    }
+}
+/*i used this for adapting screensize for smartphones */
+@media only screen and (max-width: 480px) {
+    header, footer {
+        padding: 15px; 
+    }
+
+    section, form {
+        width: calc(100% - 20px); 
+        margin: 10px auto;
+    }
+
+    h1, h2 {
+        font-size: 16px; 
+    }
+}
+
+
+/* used bounce animation for my technical skills section */
+@keyframes bounce {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-10px);
+    }
+}
+
+
+
